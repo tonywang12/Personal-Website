@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" type="x-icon"href="BOMB LOGO.jpg">
+        <title>TONY WANG &copy;</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="jquery-ui.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;1,200&display=swap" rel="stylesheet">
+            <script>
+    $(document).ready(function() { 
+        $('#grim-extra').hide();
+        $('#grim-extra2').hide();
+        $('#grim-extra3').hide();
+
+        $('#ren-extra').hide();
+        $('#ren-extra2').hide();
+        $('#ren-extra3').hide();
+
+
+        $("#bookmark1").click(function(){
+            window.location.replace("https://www.linkedin.com/in/de-hang-tony-wang-514889173");        
+        })
+
+        $("#bookmark2").click(function(){
+            window.location.replace("https://github.com/tonywang12?tab=repositories");        
+        })
+        $("#bookmark3").click(function(){
+            window.location.replace("mailto:tonywang3421@gmail.com");
+        })
+
+        $(".preso-box").mouseover(function () {
+            $('.sticky').fadeOut(1000);
+            $('#ren-extra').fadeIn(1000);
+            $('#ren-extra2').fadeIn(2000);
+            $('#ren-extra3').fadeIn(2500);
+        });
+        $('.preso-box').mouseleave(function(){
+            $('.sticky').fadeIn(1000);
+            $('#ren-extra').fadeOut(1000);
+            $('#ren-extra2').fadeOut(2000);
+            $('#ren-extra3').fadeOut(2500);
+        });
+
+        $(".preso-box2").mouseover(function () {
+            $('.sticky2').fadeOut(1000);
+            $('.sticky3').fadeOut(1000);
+            $('#grim-extra').stop().fadeIn(1000);
+            $('#grim-extra2').stop().fadeIn(2000);
+            $('#grim-extra3').stop().fadeIn(2500);
+        });
+        $('.preso-box2').mouseleave(function(){
+            $('.sticky2').fadeIn(1000);
+            $('.sticky3').fadeIn(1000);
+            $('#grim-extra').stop().fadeOut(1000);
+            $('#grim-extra2').stop().fadeOut(2000);
+            $('#grim-extra3').stop().fadeOut(2500);
+        });
+
+       
+        $("#project-nav").on('click', function() {
+            var position = $("#pro").offset().top;
+                $("HTML, BODY").animate({
+                    scrollTop: position
+                }, 1500);
+        });
+        
+        $("#about-nav").on('click', function() {
+            var position = $("#About").offset().top;
+                $("HTML, BODY").animate({
+                    scrollTop: position
+                }, 1500);
+        });
+
+        $( ".arrow" ).draggable();
+        $( ".grad" ).draggable();
+        $( ".gri" ).draggable();
+        $( ".rent" ).draggable();
+        $( ".hr" ).draggable();
+        $( ".portrait" ).draggable();
+
+        $("#logo").click(function(){
+            window.location = 'index.html';
+        })
+
+        $(".g-button").click(function(){
+            window.location.href = "https://twang12.itch.io/grim-dungeon"
+        })
+
+        $(".r-button").click(function(){
+            window.location.href = "https://twang12.itch.io/grim-dungeon"
+        })
+        
+        
+    });
+    </script>
+</head>
+
+<body>
+    <img class="arrow" src="arrow.jpg">
+    <img class="grad" src="grad.jpg">
+    <img class="gri" src="rent.jpg">
+    <img class="rent" src="grim.jpg">
+    <img class="hr" src="hr.jpg">
+
+    <p id="grim-extra" class="box-info">play as a knight, ranger or rogue!</p>
+    <p id="grim-extra2"class="box-info">Includes three levels</p>
+    <p id="grim-extra3"class="box-info">UNITY2D, C# and Aseprite</p>
+    <p id="ren-extra"class="box-infor">A turn based combat system designed by me!</p>
+    <p id="ren-extra2"class="box-infor">Told through a visual novel style</p>
+    <p id="ren-extra3"class="box-infor">HTML, CSS and JQUERY</p>
+    <p id="this-me"class="fade-element">This is what I look like!
+        <br> (kind of)
+    </p>
+    <div class="side-tags"class="fade-element">
+        <p id="Click-me-sign">Click me!</p>
+
+        <div class="bookmark"id="bookmark1">
+            <img class="logos" src="linkedin.png">
+        </div>
+
+        <div class="bookmark" id="bookmark2">
+            <img class="logos" src="Git.png">
+        </div>
+
+        <div class="bookmark" id="bookmark3">
+            <img id="email-logo"class="logos" src="mail.png">
+        </div>
+
+    </div>
+    <!-- <div class="rightside">
+        <span class="arrow right">&#10132;</i></span>
+    </div>
+    <div class="leftside">
+    <span class="arrow left">&#10132;</i></span>
+    </div> -->
+    <div class="sticky"class="fade-element">
+    </div>
+    <div class="sticky2"class="fade-element"></div>
+    <div class="sticky3"class="fade-element"></div>
+
+    <div class="retention"class="fade-element"> 
+        <h2>Retention</h2>
+        <p>A university major project called Retention, an interactive 
+        web game with the purpose of storytelling through unique gameplay 
+        elements using JQUERY. This project was completed by me during 
+        the unit course 'MMCC3045 Interactive Web Design' at Macquarie University. 
+        A project showcasing my own fictional story (based on Chainsaw Man's world) 
+        with web and game design produced by myself!</p>
+        <div class="r-button">
+            <p>Visit</p>
+        </div>
+    </div>
+
+    <div class="Grim"class="fade-element"> 
+        <h2>Grim Dungeon</h2>
+        <p>Grim Dungeon is a 2D Top-Down Action RPG Game, with 4 player local co-op. This collaborative university project
+        was developed with Unity 2D and coded using C#.
+        <br>For this project, I was a programmer for AI and game mechanics, audio designer and created some tilesets.
+            
+        </p>
+        <div class="g-button">
+            <p>Visit</p>
+        </div>
+    </div>
+
+
+
+    <div class="grid-container">
+    <div class="item1"class="fade-element">
+        <img src="BOMB LOGO.jpg" id="logo">  
+        
+        <div id="nav">  
+            <a id="about-nav">ABOUT</a>
+            <a id="project-nav">PROJECTS</a>
+        </div>          
+    </div>
+        <div class="item2">
+            <div class="Infobox"class="fade-element">
+                <h1>Welcome, I'm Tony Wang</h1>
+                <p> Welcome to my portfolio, where I showcase my work as a game design and development graduate.</p>
+                <p id="author">- Tony Wang &copy;</p>
+            </div>
+        </div>
+        <div class="item3"class="fade-element">
+            <img class="portrait"src ="me.gif">
+        </div>  
+
+        <div class="item4"class="fade-element">
+            <p id="About">About</p>
+        </div>
+        
+        <div class="item6"class="fade-element">
+            <div class="stickynote">
+                <p>
+                    I'm Tony Wang, a game design and development graduate with a minor in web design and development. With a passion for design, I strive to create unique user experiences whether it be games or websites.
+                    <br>
+                    <br>
+                    I am currently looking for any opportunities to develop my career forward, feel free to email me for a position even if it is not related to web or games! 
+                </p>
+            </div>
+        </div>
+        <div class="item5">
+            
+            <div class="boxes">
+                <div class="grey-box1"class="fade-element">
+                    
+                    <h2>Education:</h2>
+                        
+                        <div class="edu">
+                        <p>
+                        <br> &#9679; Homebush Boys High School
+                        <br> &#9679; Macquarie University
+                        </P>
+                        </div>
+                        <div id="Bachelors">
+                            <br>    - Bachelor of Game Design and Development
+                        <br>    - Minor in Web Design and Development
+                        </div>
+                </div>
+                <div class= "grey-box2" class="fade-element">
+                    <h2>Work Experience:</h2>
+                    <p>
+                        &#9679; Liminal VR internship - 2022
+                        <br> &#9679; Coles Team Member - 2022 -> Present
+                    </p>
+                </div>
+            </div>
+      </div>
+
+      
+      <div class="item7"class="fade-element">
+        <p id="pro">Projects</p>
+      </div>
+
+      <div class="item8"class="fade-element">
+        
+        <div class="preso-box"></div>
+        </div>
+        <div class="item9"class="fade-element">
+        
+            <div class="preso-box2"></div>
+            </div>
+
+        </div>
+</body>
+
+</html>
