@@ -1,0 +1,594 @@
+*{
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+}
+body{
+    background-color: #e0dcd7;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 8%);
+    gap: 10px;
+    background-color: #e0dcd7;
+    padding: 10px;
+    justify-content: center;
+    
+  }
+
+
+.side-tags{
+    position: absolute;
+    z-index: 999;
+    right:0px;
+    top:30%;
+    width:200px;
+    height: 400px;
+    
+}
+#Click-me-sign{
+  position: absolute;
+  right:42%;
+  top:16%;
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.75);
+    opacity: 0.8;
+}
+
+.bookmark{
+  width:100%;
+  opacity: 0.85;
+  
+  position: absolute;
+    
+    padding:12.5% 0%;
+    right:0;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.bookmark:hover{
+  width:120%;
+}
+#bookmark1{
+  
+    right: 0;
+    margin-top: 65%;
+    background-color: #73BCFF;
+    box-shadow: 0.3vw 0.5vw #888888;
+}
+#bookmark2{
+  right: 0;
+  margin-top: 105%;
+    background-color: #9B53B5;
+    box-shadow: 0.3vw 0.5vw #888888;}
+#bookmark3{
+  right: 0;
+  margin-top: 145%;
+
+    background-color: #76D95E;
+    box-shadow: 0.3vw 0.5vw #888888;}
+
+.logos{
+  user-select: none;
+  top:20%;
+  left:4%;
+  position: absolute;
+  height: 35px;
+}
+
+#email-logo{
+  width: 35px;
+  height: 30px;
+}
+
+
+  .item1{
+    grid-column-start: 3;
+    grid-column-end: 12;
+    background-color: #e0dcd7;
+    position: relative;
+    opacity: 0.7;
+  }
+  #nav{
+    user-select: none;
+    position: absolute;
+    right: 11%;
+    top:45%;
+  }
+  #nav a{
+    padding-left:6vw;
+    padding-right: 6vw;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 1.5vw;
+    
+  }
+  #nav a:hover::after{
+    background-color: aquamarine;
+}
+  #logo{
+    user-select: none;
+    cursor: pointer;
+    width:12%;
+    mix-blend-mode: multiply; /*remove white background*/
+  }
+
+  .item2{
+    grid-column-start: 3;
+    grid-column-end: 7;
+    position: relative;
+    
+    padding: 26%;
+    margin-top: 38%;
+    background-color: #f0f192;
+    box-shadow: 0.6vw 0.7vw #888888;
+    opacity: 0.7;
+  }
+
+  
+  
+  .Infobox{
+    
+    color: black;
+    position: absolute;
+    top:0;
+    left:5%;
+    width: 90%;
+  }
+  .Infobox p{
+    user-select: none;
+    font-size: 1vw;
+    
+  }
+  .Infobox h1{
+    user-select: none;
+    font-size: 2vw;
+    font-weight: 600;
+  }
+   #author{
+    position: absolute;
+    right: 5%;
+    top:120%;
+    font-size: 0.8vw;
+
+    text-decoration: underline;
+  }
+  #this-me{
+    color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    right: 19%;
+    top:62%;
+    transform: rotate(6deg);
+    opacity: 0.8;
+  }
+  .item3{
+    grid-column-start: 8;
+    grid-column-end: 12;
+    position: relative;
+   
+    padding: 10px;
+    height: 55%;
+    margin-top: 35%;
+    
+  }
+  .portrait{
+    position: absolute;
+    height: 100%;
+    mix-blend-mode: multiply; 
+  }
+
+  .item4{
+    padding-top: 180%;
+    
+    grid-column-start: 3;
+    grid-column-end: 4;
+    font-size: 3vw;
+    color: rgba(0, 0, 0, 0.75);
+  }
+
+  .item6{
+    grid-column-start: 7;
+    grid-column-end: 12;
+    position: relative;
+    top:100%;
+    height:70%;
+    background-color: #f0f192;
+    box-shadow: 0.5vw 0.7vw #888888;
+  }
+  .stickynote{
+    position: absolute;
+    padding:0 5%;
+    opacity: 0.7;
+  }
+  .stickynote p{
+    padding-top: 5%;
+  }
+  .item5{
+    grid-column-start: 3;
+    grid-column-end: 6;
+    top:0;
+    width:100%;
+    position: relative;
+
+  }
+  .grey-box1{
+    opacity: 0.9;
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.75);
+    padding:10% 0%;
+  }
+  .grey-box1 p{
+    font-size: 1vw;
+    position: absolute;
+    left:10%;
+    top:5%;
+  }
+  .grey-box1 h2{
+    position: absolute;
+    left:5%;
+    top:0;
+  }
+
+  .grey-box2{
+    opacity: 0.9;
+    width: 100%;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.75);
+    padding:10% 0%;    
+    margin-top: 50%;
+    
+  }
+
+  .grey-box2 p{
+    font-size: 1vw;
+    position: absolute;
+    left:10%;
+    top:45%;
+    
+  }
+  .grey-box2 h2{
+    position: absolute;
+    left:5%;
+    top:0;
+  }
+
+  #About{
+    padding-top: 50%;
+  }
+  .item7{
+    margin-top: 550%;
+    font-size: 3vw;
+    
+    color: rgba(0, 0, 0, 0.75);
+    position: relative;
+  }
+  
+
+  
+ 
+  .sticky{
+    position: absolute;
+    
+    margin-left: 45% ;
+    margin-top: 119.5%;
+    background-color: #D6DCE2;
+    box-shadow: 0.3vw 0.2vw #888888;
+    opacity: 0.8;
+    width: 8%;
+    height: 5%;
+    z-index: 1000;
+    transform: rotate(5deg);
+  }
+
+  .sticky2{
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 183%;
+    background-color: #D6DCE2;
+    box-shadow: 0.3vw 0.2vw #888888;
+    opacity: 0.8;
+    width: 10%;
+    height: 5%;
+    z-index: 1000;
+    transform: rotate(-50deg);
+  }
+
+  .sticky3{
+    position: absolute;
+    margin-left: 65%;
+    margin-top: 182%;
+    background-color: #D6DCE2;
+    box-shadow: 0.3vw 0.2vw #888888;
+    opacity: 0.8;
+    width: 16%;
+    height: 5%;
+    z-index: 1000;
+    transform: rotate(30deg);
+  }
+  
+
+ 
+  .item8{
+    grid-column-start: 3;
+    grid-column-end: 13;
+    position: relative;
+    padding-bottom: 55%;
+    width: 100%;
+  }
+
+ 
+
+  .item9{
+    grid-column-start: 3;
+    grid-column-end: 12;
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 30%;
+    width: 100%;
+  }
+  .preso-box{
+    position: absolute;
+    left: 13%;
+    box-shadow: 1VW 0.8vw #888888;
+    width: 65%;
+    height: 70%;
+    background-image: url("Retention.JPG");
+    transform: rotate(2deg);
+    opacity: 0.7;
+    transition: 1s;
+    filter: blur(1px); 
+  }
+  .preso-box img{
+    width: 70%;
+  }
+  .preso-box:hover{
+    filter: blur(0px); 
+    opacity: 0.9;
+    transform: rotate(0deg);
+    box-shadow: 0.8vw 1vw #888888;
+  }
+
+  .preso-box2{
+    position: absolute;
+    box-shadow: 1vw 0.8vw #888888;
+    left:12%;
+    width: 70%;
+    height: 80%;
+    background-image: url("dun.JPG");
+    opacity: 0.7;
+    transform: rotate(-2deg);
+    transition: 1s;
+    filter: blur(1px); 
+    padding-bottom: 5%;
+  }
+
+  .preso-box2:hover{
+    opacity: 0.9;
+    transform: rotate(0deg);
+    filter: blur(0px);
+    box-shadow: 0.8vw 1vw #888888;
+  }
+
+  .retention{
+    position: absolute;
+    
+    right:0;
+    width: 20%;
+    color: rgba(0, 0, 0, 0.75);
+    
+  }
+
+  .retention h2{
+    font-size: 1.7vw;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+
+  .retention p{
+    opacity: 0.8;
+    font-size: 0.9vw;
+  }
+  .r-button{
+    right: 0;
+    position: relative;
+    margin: auto;
+    background-color: #dc7ffd;
+    box-shadow: 0.5vw 0.4vw #888888;
+    width: 50%;
+    height: 100%;
+    transition: 1.5s;
+    cursor: pointer;
+  }
+
+  .r-button:hover{ /*only changes 'after' part on hover */
+    background-color: #9B53B5;
+  }
+
+  .r-button p{
+    
+    font-size: 2.3vw;
+    text-align: center;
+  }
+  
+  .Grim{
+    color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top:55%;
+    left: -17%;
+    width: 24%;
+    padding-bottom: 20%;
+  }
+
+  .Grim h2{
+    font-size: 1.7vw;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+
+  .Grim p{
+    opacity: 0.8;
+    font-size: 0.9vw;
+  }
+
+  .g-button{
+    position: relative;
+    margin: auto;
+    background-color: #ffaf47;
+    box-shadow: 0.5vw 0.4vw #888888;
+    width: 50%;
+    height: 100%;
+    transition: 1.5s;
+    cursor: pointer;
+  }
+
+  .g-button:hover{ /*only changes 'after' part on hover */
+    background-color: #bb8948;
+  }
+
+  .g-button p{
+    
+    font-size: 2.3vw;
+    text-align: center;
+  }
+
+  #grim-extra{
+    font-size: 1vw;
+    position: absolute;
+    right:-8%;
+    transform: rotate(5deg);
+  }
+  
+  #grim-extra2{
+    font-size: 1vw;
+    position: absolute;
+    right:-9%;
+    top:75%;
+    transform: rotate(-3deg);
+  }
+  #grim-extra3{
+    font-size: 1vw;
+    position: absolute;
+    right:-9%;
+    top:100%;
+    transform: rotate(3deg);
+  }
+
+  #ren-extra{
+    font-size: 0.9vw;
+    position: absolute;
+    top:5%;
+    left:-18%;
+    transform: rotate(3deg);
+  }
+  
+  #ren-extra2{
+    font-size: 1vw;
+    position: absolute;
+    top:30%;
+    left:-14%;
+    transform: rotate(-5deg);
+  }
+  #ren-extra3{
+    font-size: 1vw;
+    position: absolute;
+    top:50%;
+    left:-11%;
+  }
+
+  .arrow{
+    position: absolute;
+    width:50%;
+    mix-blend-mode: multiply; 
+    right:30%;
+    top:40%;
+    transform: rotate(10deg);
+    opacity: 0.8;
+    z-index: 1000;
+    cursor:grabbing;
+  }
+  .grad{
+    position: absolute;
+    width:100%;
+    mix-blend-mode: multiply; 
+    left:61%;
+    top:40%;
+    transform: rotate(-10deg);
+    opacity: 0.8;
+    z-index: 1000;
+    cursor:grabbing;
+  }
+  
+  .rent{
+    position: absolute;
+    width:20%;
+    mix-blend-mode: multiply; 
+    left:-15%;
+    top:13%;
+    transform: rotate(-10deg);
+    opacity: 0.8;
+    z-index: 1000;
+    cursor:grabbing;
+  }
+  .gri{
+    position: absolute;
+    width:22%;
+    top:55%;
+    mix-blend-mode: multiply; 
+    right:-6%;
+    transform: rotate(10deg);
+    opacity: 0.8;
+    z-index: 1000;
+    cursor:grabbing;
+  }
+  .hr{
+    position: absolute;
+    width:100%;
+    mix-blend-mode: multiply; 
+    right:55%;
+    padding-bottom: 10%;
+    transform: rotate(0deg);
+    opacity: 0.8;
+    z-index: 1000;
+    cursor:grabbing;
+  }
+  .box-info{
+    background-color: #ffaf47;
+    box-shadow: 0.3vw 0.4vw #888888;
+    padding:10px;
+    opacity: 0.8;
+  }
+  .box-infor{
+    background-color: #dc7ffd;
+    box-shadow: 0.3vw 0.4vw #888888;
+    padding:10px;
+    opacity: 0.8;
+  }
+  
+  #pro{
+    text-transform: uppercase;
+  }
+
+  #About{
+    text-transform: uppercase;
+  }
+
+  .portrait{
+    z-index: 1000;
+    cursor:grabbing;
+  }
+
+  #Bachelors{
+    position: absolute;
+    top:28%;
+    left:17%;
+  }
+
+  #about-nav{
+    cursor: pointer;
+  }
+
+  #project-nav{
+    cursor: pointer;
+  }
